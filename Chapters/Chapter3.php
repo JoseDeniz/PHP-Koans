@@ -17,9 +17,7 @@ class Chapter3 extends Chapter
      */
     public function concatenation($valueOne, $valueTwo)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $valueThree = $valueOne.$valueTwo;
         return $valueThree;
     }
 
@@ -32,9 +30,7 @@ class Chapter3 extends Chapter
      */
     public function substitution($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $valueTwo = sprintf($valueOne, "Susan");
         return $valueTwo;
     }
 
@@ -47,9 +43,7 @@ class Chapter3 extends Chapter
      */
     public function replacement($valueOne)
     {
-        // CODE HERE
-
-        // DO NOTE EDIT BELOW
+        $valueTwo = str_replace("relaxing", "educational", $valueOne);
         return $valueTwo;
     }
 
@@ -62,9 +56,7 @@ class Chapter3 extends Chapter
      */
     public function length($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $valueTwo = strlen($valueOne);
         return $valueTwo;
     }
 
@@ -77,9 +69,7 @@ class Chapter3 extends Chapter
      */
     public function singleCharacters($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $valueTwo = $valueOne[2];
         return $valueTwo;
     }
 
@@ -94,9 +84,10 @@ class Chapter3 extends Chapter
      */
     public function substrings($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $partOne = substr($valueOne, 0, 3);
+        $partTwo = substr($valueOne, 4, 5);
+        $length = strlen($valueOne);
+        $partThree = substr($valueOne, $length - 2, $length - 1);
         return [$partOne, $partTwo, $partThree];
     }
 
@@ -111,9 +102,9 @@ class Chapter3 extends Chapter
      */
     public function changingCase($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $allLower = strtolower($valueOne);
+        $allUpper = strtoupper($valueOne);
+        $firstUpper = ucfirst($valueOne);
         return [$allLower, $allUpper, $firstUpper];
     }
 
@@ -128,9 +119,7 @@ class Chapter3 extends Chapter
      */
     public function searching($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $foundLocation = strpos($valueOne, "mountain");
         return $foundLocation;
     }
 
