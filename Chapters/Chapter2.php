@@ -17,9 +17,7 @@ class Chapter2 extends Chapter
      */
     public function addition($valueOne, $valueTwo)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $sum = $valueOne + $valueTwo;
         return $sum;
     }
 
@@ -33,9 +31,7 @@ class Chapter2 extends Chapter
      */
     public function subtraction($valueOne, $valueTwo)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $difference = $valueOne - $valueTwo;
         return $difference;
     }
 
@@ -48,9 +44,7 @@ class Chapter2 extends Chapter
      */
     public function multiplication($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $fourTimes = $valueOne * 4;
         return $fourTimes;
     }
 
@@ -62,9 +56,7 @@ class Chapter2 extends Chapter
      */
     public function division($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $oneFourth = $valueOne / 4;
         return $oneFourth;
     }
 
@@ -77,9 +69,7 @@ class Chapter2 extends Chapter
      */
     public function modulus($valueOne)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $remainder = $valueOne % 5;
         return $remainder;
     }
 
@@ -92,9 +82,8 @@ class Chapter2 extends Chapter
      */
     public function rounding($valueOne, $valueTwo)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $valueOne = round($valueOne);
+        $valueTwo = round($valueTwo, 2);
         return [$valueOne, $valueTwo];
     }
 
@@ -107,9 +96,8 @@ class Chapter2 extends Chapter
      */
     public function roundingUpAndDown($valueOne, $valueTwo)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
+        $valueOne = ceil($valueOne);
+        $valueTwo = floor($valueTwo);
         return [$valueOne, $valueTwo];
     }
 
@@ -121,10 +109,7 @@ class Chapter2 extends Chapter
      */
     public function incrementAndDecrement($valueOne, $valueTwo)
     {
-        // CODE HERE
-
-        // DO NOT EDIT BELOW
-        return [$valueOne, $valueTwo];
+        return [++$valueOne, --$valueTwo];
     }
 
     // DO NOT EDIT BELOW
